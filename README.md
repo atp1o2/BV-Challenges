@@ -1,4 +1,4 @@
-Memorial Day Webpage Challenge for BoardVitals
+# Memorial Day Webpage Challenge for BoardVitals
 
 Hello and thank you for reviewing my challenge!
 
@@ -6,23 +6,26 @@ To start, just open index.html in a browser.
 
 -----
 
-Whenever I start on a web page, my pre-work always involves getting the styling work flow to work with me
+### Pre-work
+
+Whenever I start on a web page, my pre-work always involves getting the styling to work with me
 instead of against. For a developing project, these are the steps I take:
+
 - Organize style sheets according to major components and static web pages
-- Establish brand colors in the form of variables ie. $brandNavy: #1b3950;
-- Ensure SASS is ordering style sheets the correct order
+- Establish brand colors in the form of variables ie. `$brandNavy: #1b3950;`
+- Ensure SASS is ordering style sheets in the correct order
   * Importing a variables scss before bootstrap. This allows the developer to override bootstraps default
   variables in order to better utilize bootstraps already made classes instead of creating more utility classes
-  * For ex, by overriding bootstrap's $font-size-h5 variable, I could have used the h5 class (not tag) to
-  achieve a font-size of 18px instead of creating a utility class for it (see ./style/utilities.css)
+  * For ex, by overriding bootstrap's `$font-size-h5` variable, I could have used the h5 class (not tag) to
+  achieve a font-size of 18px instead of creating a utility class for it (see `./style/utilities.css`)
 - Create utility classes from brand colors and lock down site wide typography
 
-These above steps are crucial for developer friendly front end work flow. By utilizing as many Bootstrap
+These above steps are important for a developer friendly front end work flow. By utilizing as many Bootstrap
 classes as possible, we are keeping our code DRY which besides the standard benefits of optimization and
-better readability, helps us avoid tech debt caused by destructive css practices. Plus it just makes
+readability, helps us avoid tech debt caused by destructive css practices. Plus it just makes
 styling more enjoyable overall.
 
-Post Pre-work (There's gotta be a better way to say that)
+### Post Pre-work (There's gotta be a better way to say that)
 
 1. After getting a design, I build the responsive skeleton with all the elements in place.
 My main focus is to use as much Bootstrap as possible to get rough spacing, columns, and responsiveness down.
@@ -49,7 +52,8 @@ especially when it involves sensitive data. HTML tags now has much more robust a
 not all areas are covered and meeting WCAG 2.0 is still a developing field. If desired, I walk through the app with a
 screen reader and add ARIA attributes where needed.
 
-Misses
+
+### Misses
 I got as much work done as I could after my day job, but I did miss some features:
 - Didn't calculate srcset for the banner top banner image. It was getting late and my brain started fritzing
 - Overlay positioning for discount-details over the gray background. Was playing around with media queries to get it right, but I
@@ -57,7 +61,7 @@ opted to move as it started to get hacky. I'm feeling the cleaner solution must 
 - Button roll isn't exactly the UX specified. Weird using jQuery again. Nostalgically enjoyable but I'm quite
 glad it's not a thing anymore.
 
------
+
 
 Thank you again for reviewing my challenge. It was definitely interesting building a web page without the framework
 component style of developing and I enjoyed going back to basics. I personally want to work for BoardVitals because
