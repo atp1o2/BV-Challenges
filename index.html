@@ -1,0 +1,174 @@
+<html>
+<head>
+  <title>Board Vitals</title>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap v4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="./style/index.css">
+  <link rel="stylesheet" type="text/css" href="./style/utilities.css">
+  <link rel="stylesheet" type="text/css" href="./style/button-slider.css">
+</head>
+<body>
+  <nav class="container-fluid">
+    <a class="navbar-brand img-fluid" href="#">
+      <img src="./assets/boardvitals_logo.svg" alt="Board Vitals Company Logo" height="70px" width="210px">
+    </a>
+  </nav>
+
+  <div class="banner text-center pt-2">
+    <div class="bg-red py-3 my-3">
+      <p class="my-auto text-white">This offer ends is <span id="countdown" class="text-white"></span>!</p>
+    </div>
+    <div class="container">
+      <img class="img-fluid hero" src="./assets/hero_memorial_day.png" alt="Memorial Day Sale">
+
+      <div class="discount-details py-5">
+        <div class="row pt-4">
+          <div class="col-sm-12 font-big font-weight-light">
+            <p>If your exam is this summer or fall, we're offering you a tremendous value this Memorial Day Weekend.</p>
+            <p>For a limited time, take up to 20% off our board review question banks, depending on how much time you need to review.<br />Choose your discount:</p>
+          </div>
+        </div>
+        <div class="card-deck">
+          <div class="card discount-card mx-2">
+            <img class="mx-auto d-block" src="./assets/10%_star.png" alt="10% Discount">
+            <div class="card-block">
+              <p class="text-red">1-Month Question Banks</p>
+              <p class="text-blue font-weight-light">Use code: <b class="font-weight-bold">MD1MONTH</b> at checkout</p>
+              <button id="slider10" class="btn bg-navy btn-block">
+                <span id="content10" class="text-white font-small font-weight-light">Click Here to Copy this 10% Code</span>
+              </button>
+            </div>
+          </div>
+          <div class="card discount-card mx-2">
+            <img class="mx-auto d-block" src="./assets/15%_star.png" alt="15% Discount">
+            <div class="card-block">
+              <p class="text-red">3-Month Question Banks</p>
+              <p class="text-blue font-weight-light">Use code: <b class="font-weight-bold">MD3MONTH</b> at checkout</p>
+              <button id="slider15" class="btn bg-navy btn-block">
+                <span id="content15" class="text-white font-small font-weight-light">Click Here to Copy this 15% Code</span>
+              </button>
+            </div>
+          </div>
+          <div class="card discount-card mx-2">
+            <img class="mx-auto d-block" src="./assets/20%_star.png" alt="20% Discount">
+            <div class="card-block">
+              <p class="text-red">6-Month Question Banks</p>
+              <p class="text-blue font-weight-light">Use code: <b class="font-weight-bold">MD6MONTH</b> at checkout</p>
+              <button id="slider20" class="btn bg-navy btn-block">
+                <span id="content20" class="text-white font-small font-weight-light">Click Here to Copy this 20% Code</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row m-3">
+          <div class="col-sm-12 text-center text-md-left font-small">
+            <p class="text-gray">These discounts will expire this Monday, May 30th, at 11:59PM ET</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10 offset-1 col-md-6 offset-md-3">
+            <button class="btn btn-block btn-cta bg-yellow font-weight-light text-white p-3">Find Your Board Review Question Bank</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="font-lg text-center font-weight-light my-5">Why use Board Vitals?</p>
+    <div class="row font-weight-light text-center text-md-left">
+      <div class="col-sm-12 col-md-4 mb-3">
+        <img class="mb-2" src="./assets/thumbs_up.png" alt="Content Professionally Reviewed">
+        <p>You get the best and most up-to-date board review questions possible. Our content is updated daily and continually reviewed and rated by clinicians to make sure the best questions are front and center.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3">
+        <img class="mb-2" src="./assets/details.png" alt="Detailed Explanations for Questions">
+        <p>You get detailed rationales and explanations for every single question and answer, even the incorrect answers.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3">
+        <img class="mb-2" src="./assets/institutions.png" alt="BoardVitals working with Institutions">
+        <p>You'll join over 100,000 practitioners and 300 institutions who are studying with BoardVitals, including Yale School of Medicine, Johns Hopkins, Duke, and Mount Sinai Hospital.</p>
+      </div>
+    </div>
+    <div class="row font-weight-light text-center text-md-left">
+      <div class="col-sm-12 col-md-4 mb-3">
+        <img class="mb-2" src="./assets/cme.png" alt="CME and MOC Credits">
+        <p>You can earn CME and MOC credits while you study. This option is available for practicing physicians on many of our question banks.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3">
+        <img class="mb-2" src="./assets/responsive.png" alt="Web to Mobile Responsiveness">
+        <p>You can study anytime, anywhere, on your phone, tablet or laptop.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3">
+        <img class="mb-2" src="./assets/check_guarantee.png" alt="100% Pass Guarantee">
+        <p>Free Trial and a 100% Pass Guarantee.</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <p class="font-lg text-center font-weight-light my-5">Unsure of Your Exam Date? Find It Here:</p>
+    <div class="row">
+      <div class="col">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr class="bg-navy font-big">
+              <th scope="col" class="font-weight-light text-white">Exam Name</th>
+              <th scope="col" class="font-weight-light text-white">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row"><a class="text-yellow" href="#">Family Medicine</a></td>
+              <td>May 30 2016</td>
+            </tr>
+            <tr>
+              <td scope="row"><a class="text-yellow" href="#">Family Medicine</a></td>
+              <td>May 30 2016</td>
+            </tr>
+            <tr>
+              <td scope="row"><a class="text-yellow" href="#">Family Medicine</a></td>
+              <td>May 30 2016</td>
+            </tr>
+            <tr>
+              <td scope="row"><a class="text-yellow" href="#">Family Medicine</a></td>
+              <td>May 30 2016</td>
+            </tr>
+            <tr>
+              <td scope="row"><a class="text-yellow" href="#">Family Medicine</a></td>
+              <td>May 30 2016</td>
+            </tr>
+            <tr>
+              <td scope="row"><a class="text-yellow" href="#">Family Medicine</a></td>
+              <td>May 30 2016</td>
+            </tr>
+            <tr>
+              <td scope="row"><a class="text-yellow" href="#">Family Medicine</a></td>
+              <td>May 30 2016</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row text-center my-5">
+      <div class="col-sm-12 col-md-8 offset-md-2">
+        <p>You can gain access to our question banks for 1-Month, 3-Months, or 6-Months at a time.<br />Your length of access starts immediately after you complete your purchase.</p>
+        <p>For assistance, email us at info@boardvitals.com or call us at (917) 768 0744. We’re here to help.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/button-slider.js"></script>
+  <script type="text/javascript" src="./js/countdown.js"></script>
+</body>
+</html>

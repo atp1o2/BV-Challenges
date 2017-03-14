@@ -1,0 +1,28 @@
+/*
+.scss variables
+$brandNavy: #1b3950;
+$brandRed: #e8152e;
+$brandGray: #8d9ba8;
+$brandYellow: #FDA100;
+
+$display4-size: 18px;
+$display4-weight: lighter;
+=> enables me to use bootstrap's display-4 instead of creating .font-big
+*/
+
+.bg-red { background-color: #e8152e; }
+.bg-navy { background-color: #1b3950; }
+.bg-yellow { background-color: #FDA100; }
+.bg-white { background-color: #FFFFFF; }
+
+.text-navy { color: #1b3950; }
+.text-red { color: #e8152e; }
+.text-gray { color: #8d9ba8; }
+.text-yellow { color: #FDA100; }
+.text-yellow:hover { color: #FDA100; }
+
+.font-small { font-size: 14px; }
+.font-big { font-size: 18px; }
+.font-lg { font-size: 36px; }
+.font-weight-light { font-weight: lighter; }
+

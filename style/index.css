@@ -1,0 +1,80 @@
+/*
+All of these classes should be nested
+using scss to avoid competing classes.
+*/
+
+* {
+  font-family: 'Lato', sans-serif;
+  color: #1b3950;
+}
+
+.banner {
+  background-color: #ecf5fb;
+}
+
+.hero {
+  margin-bottom: -2rem;
+}
+
+.discount-details {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px #CDCDCD;
+  -webkit-box-shadow: 0px 5px 10px 0px #CDCDCD;
+  -moz-box-shadow: 0px 5px 10px 0px #CDCDCD;
+}
+
+.discount-card {
+  border: 1px solid #d7e1eb;
+  border-radius: 5px;
+  margin-top: 5rem;
+}
+
+.discount-card img {
+  width: 85;
+  margin-top: -3rem;
+}
+
+.discount-card div button {
+  border: 1px solid #1b3950;
+  border-radius: 5px;
+  height: 3rem;
+}
+
+.discount-card div button:hover {
+  border: 1px solid #234865;
+  background-color: #234865;
+}
+
+.btn-cta {
+  border: 1px solid #FDA100;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  white-space: normal;
+}
+
+.btn-cta:hover {
+  border: 1px solid #f9b53d;
+  background-color: #f9b53d;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #ecf5fb;
+}
+
+.table-bordered {
+  border: 1px solid #d7e1eb;
+}
+
+@media (max-width: 575px) {
+  .discount-card {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .btn-cta {
+    font-size: 1rem;
+  }
+}
